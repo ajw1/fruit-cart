@@ -3,11 +3,11 @@
  */
 package com.thewrides.fruitcart;
 
-public class Basket {
+public class Basket implements BasketInterface {
 
     public static int getPrice(FruitEnum... fruitList) {
         int price = 0;
-        for (FruitEnum fruit:fruitList) {
+        for (FruitEnum fruit : fruitList) {
             price += fruit.getPrice();
         }
         return price;
